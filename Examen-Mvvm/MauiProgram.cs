@@ -17,6 +17,7 @@ namespace Examen_Mvvm
 
 #if DEBUG
     		builder.Logging.AddDebug();
+            Console.WriteLine("Hola mundo");
 #endif
 
             return builder.Build();

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Examen_Mvvm.Views.Interface"
+             xmlns:viewModel="clr-namespace:Examen_Mvvm.ViewModels"
+             x:DataType="viewModel:Operaciones"
+             Title="Interface">
+    <VerticalStackLayout Padding="100" Margin="50">
+        <Label FontSize="50" Text="Calculadora de productos" />
+
+        <Label Text="Ingrese el precio del producto #1" />
+        <Entry Text="{Binding A, Mode=TwoWay}" Keyboard="Numeric" />
+
+        <Label Text="Ingrese el precio del producto #2" />
+        <Entry Text="{Binding B, Mode=TwoWay}" Keyboard="Numeric" />
+
+        <Label Text="Ingrese el precio del producto #3" />
+        <Entry Text="{Binding C, Mode=TwoWay}" Keyboard="Numeric" />
+
+        <Label Text="Subtotal:" />
+        <Label Text="{Binding Subtotal}" />
+
+        <Label Text="Descuento:" />
+        <Label Text="{Binding Descuento}" />
+        
+        <Label Text="Total:" />
+        
+        <Label Text="{Binding Total}" />
+
+
+
+
+
+
+
+        <Button Text="Calcular" Command="{Binding CalcularCommand}" BackgroundColor="OrangeRed" />
+
+        <Button Text="Limpiar" Command="{Binding LimpiarCommand}" BackgroundColor="Gray" />
+
+    </VerticalStackLayout>
+</ContentPage>
