@@ -66,17 +66,7 @@ namespace Examen_Mvvm.ViewModels
             }
 
 
-
-
-
-
-
-
             }
-
-
-
-
 
 
 
@@ -90,11 +80,6 @@ namespace Examen_Mvvm.ViewModels
             Descuento = 0;
             Total = 0;
         }
-
-
-
-
-
 
 
 

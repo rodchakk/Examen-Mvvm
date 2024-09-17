@@ -33,9 +33,9 @@
 
 
 
-        <Button Text="Calcular" Command="{Binding CalcularCommand}" BackgroundColor="OrangeRed" />
+        <Button Text="Calcular" Command="{Binding CalcularCommand}" />
 
-        <Button Text="Limpiar" Command="{Binding LimpiarCommand}" BackgroundColor="Gray" />
+        <Button Text="Limpiar" Command="{Binding LimpiarCommand}" />
 
     </VerticalStackLayout>
 </ContentPage>
